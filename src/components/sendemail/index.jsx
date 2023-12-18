@@ -3,32 +3,31 @@ import { Route, Link, useRouter, Redirect } from 'url-state-router';
 import PlainEmail from './PlainEmail';
 import TemplatedEmail from './TemplatedEmail';
 import { Stack, Menu, MenuItem, Container } from 'juno-ui-components';
-function Email() {
+function SendEmail() {
   const { currentPath } = useRouter();
-  console.log(currentPath);
+  console.log("currentPath" , currentPath);
   return (
     <div>
       <Stack>
         <div>
           <Menu>
-            <MenuItem label="Item with a Link" icon="home">
-              <Link to="/email/plain">Plain Mail </Link>
+            <MenuItem label="Plain Email" icon="home">
+              <Link to="/sendemail/plain">Plain Mail </Link>
             </MenuItem>
-            <MenuItem label="Item with a Link">
-              <Link to="/email/templated">Templated Mail</Link>
+            <MenuItem label="Templated Email">
+              <Link to="/sendemail/templated">Templated Mail</Link>
             </MenuItem>
           </Menu>
         </div>
         <div>
           <Container>
-            <Route path="/email">
-              <Redirect to="/email/templated" />
+            <Route path="/sendemail">
+              <Redirect to="/sendemail/plain" />
             </Route>
-
-            <Route path="/email/templated">
+            <Route path="/sendemail/templated">
               <TemplatedEmail />
             </Route>
-            <Route path="/email/plain">
+            <Route path="/sendemail/plain">
               <PlainEmail />
             </Route>
           </Container>
@@ -38,4 +37,4 @@ function Email() {
   );
 }
 
-export default Email;
+export default SendEmail;

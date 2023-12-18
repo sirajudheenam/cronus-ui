@@ -1,4 +1,7 @@
-function index() {
+import React from "react";
+import CredentialsList from "./list";
+
+function CredentialsIndex() {
   return (
     <div>
       <CredentialsList />
@@ -6,4 +9,4 @@ function index() {
   );
 }
 
-export default index;
+export default CredentialsIndex;

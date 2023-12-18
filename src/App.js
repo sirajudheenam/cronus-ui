@@ -14,6 +14,7 @@ const URL_STATE_KEY = 'cronus';
 const App = (props = {}) => {
   const { setUrlStateKey, setTokenData } = useGlobalsActions();
 
+  const [nebulaDetails, setNebulaDetails] = React.useState({});
   // on app initial load save Endpoint and URL_STATE_KEY so it can be
   // used from overall in the application
   React.useEffect(() => {

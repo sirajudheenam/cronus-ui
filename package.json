@@ -1,7 +1,7 @@
 {
   "name": "cronus-ui",
   "version": "1.0.1",
-  "author": "REPLACE ME",
+  "author": "Sirajudheen (Sam) Mohamed Ali",
   "license": "MIT",
   "source": "src/index.js",
   "module": "build/index.js",
@@ -35,7 +35,7 @@
     "shadow-dom-testing-library": "^1.7.1",
     "tailwindcss": "^3.3.1",
     "url-state-provider": "https://assets.juno.global.cloud.sap/libs/url-state-provider@latest/package.tgz",
-    "url-state-router": "https://assets.juno.global.cloud.sap/libs/url-state-router@latest/package.tgz",
+    "url-state-router": "https://assets.juno.global.cloud.sap/libs/url-state-router@1.0.3/package.tgz",
     "util": "^0.12.4",
     "zustand": "4.3.7",
     "esbuild": "^0.19.5"
